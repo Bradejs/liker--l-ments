@@ -56,5 +56,5 @@ import Post from "./components/Post";
 
 export default App;
 
-// Suite 1h Projet
+
 
