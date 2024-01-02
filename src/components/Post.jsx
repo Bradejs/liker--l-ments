@@ -6,6 +6,8 @@ export default function Post({ data }) {
     <div>
       <h2>{data.titre}</h2>
       <p>{data.description} </p>
+      <button>Liker</button>
+      <button>Effacer</button>
     </div>
   </div>
   );
