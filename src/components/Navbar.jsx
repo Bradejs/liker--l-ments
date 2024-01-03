@@ -2,8 +2,8 @@ import React from 'react'
 
 export default function Navbar() {
   return (
-    <div>
-        <h3>Voici la barre de navigation</h3>
+    <div className='entete'>
+        <h3>les posts like : 10</h3>
     </div>
   );
 }
