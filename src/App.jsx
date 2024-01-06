@@ -43,12 +43,16 @@ import Post from "./components/Post";
       liker: false,
     },
   ])
+
+  const liker = (data) => {
+    console.log(data);
+  };
   return (
   <div className="App">
     <Navbar />
     {
       posts.map((p=>
-      <Post data={p} key={p.id} />
+      <Post data={p} key={p.id} liker={liker}/>
       ))}
   </div>
   );
