@@ -45,14 +45,26 @@ import Post from "./components/Post";
   ])
 
   const liker = (data) => {
-    console.log(data);
+    const  donneeCopier = [...posts];
+    const index = posts.indexOf(data)
+    donneeCopier[index] = {...posts[index],
+      liker: !posts[index].liker };
+      setPosts(donneeCopier);
+      console.log(donneeCopier);
   };
+  const effacerPost = (id) =>{
+    const nouvelledonne = posts.filter((p) => p.id != id)
+    setPosts(nouvelledonne);
+  };
+
+  const nombreLiker = posts.filter((p) => p.filter);
+
   return (
   <div className="App">
-    <Navbar />
-    {
-      posts.map((p=>
-      <Post data={p} key={p.id} liker={liker}/>
+    <Navbar nombreLike={nombreLiker.length} />
+    {posts.map((p=>
+      <Post data={p} key={p.id} liker={liker}
+      supression={effacerPost} />
       ))}
   </div>
   );

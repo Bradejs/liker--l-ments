@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Navbar() {
+export default function Navbar({nombreLike}) {
   return (
     <div className='entete'>
-        <h3>les posts liker sont : 10</h3>
+        <h3>les posts liker sont : {nombreLike}</h3>
     </div>
   );
 }
