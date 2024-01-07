@@ -57,7 +57,7 @@ import Post from "./components/Post";
     setPosts(nouvelledonne);
   };
 
-  const nombreLiker = posts.filter((p) => p.filter);
+  const nombreLiker = posts.filter((p) => p.liker);
 
   return (
   <div className="App">
